@@ -1,0 +1,32 @@
+GET HTTP://localhost:4042/api/ingredientes
+###
+
+GET HTTP://localhost:4042/api/ingredientes/2
+###
+
+POST HTTP://localhost:4042/api/ingredientes
+Content-Type: application/json
+
+{
+    "descricao": "Queijo qualy",
+    "medida": "GRAMAS",
+    "dataValidade": "2023-12-15T00:00:00",
+    "valor": 15.0,
+    "observacao": "Queijo de cabra."
+}
+
+###
+PUT HTTP://localhost:4042/api/ingredientes/2
+Content-Type: application/json
+
+{
+    "descricao": "Queijo qualy",
+    "medida": "UNIDADE",
+    "dataValidade": "2023-12-18T00:00:00",
+    "valor": 35.0,
+    "observacao": "Queijo de cabra"
+}
+
+###
+
+DELETE  HTTP://localhost:4042/api/ingredientes/1
